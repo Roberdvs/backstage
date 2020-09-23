@@ -22,6 +22,7 @@ export const Router = ({ entity }: { entity: Entity }) => {
   return (
     <Routes>
       <Route
+        key={entity.metadata.name}
         path="/"
         element={<ExampleFetchComponent />}
       />
